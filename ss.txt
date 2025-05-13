@@ -1,0 +1,21 @@
+<script>
+    // Authentication check
+    async function checkAuth() {
+        const token = localStorage.getItem('token');
+        const errorMessage = document.getElementById('error-message');
+
+        if (!token) {
+            window.location.href = './login.html';
+            return;
+        }
+
+    }
+
+    // Run auth check on page load
+    document.addEventListener('DOMContentLoaded', checkAuth);
+
+
+
+
+  
+</script>
