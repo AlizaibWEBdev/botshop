@@ -219,7 +219,7 @@ function loadChatMessages() {
     chatState = loadChatState();
     const chatbotBody = document.getElementById('chatbotBody');
     chatbotBody.innerHTML = '';
-    addMessageToChat("Hello! Welcome to BoldThreads. I'm here to assist with your shopping needs. Would you like help today?", 'bot-message', false);
+    addMessageToChat("Hello! Welcome to FitEdit. I'm here to assist with your shopping needs. Would you like help today?", 'bot-message', false);
     displayYesNoButtons();
 }
 
