@@ -371,7 +371,7 @@ function displayProductCategories() {
     buttonContainer.className = 'button-container';
 
     productFiles.forEach((file, index) => {
-        const categoryName = file.replace('.json', '').replace('./', '').replace(/_/g, ' ');
+        const categoryName =  file.toLocaleLowerCase().replace('.json', '').replace('./', '').replace(/_/g, ' ').replace("mens","men").replace("womens","women").replace("lather","leather")
         const button = document.createElement('button');
         button.className = 'chatbot-option-button';
         button.textContent = `${index + 1}. ${categoryName}`;
